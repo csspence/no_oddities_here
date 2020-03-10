@@ -6,6 +6,12 @@ All values in the array will be integers. Return the good values in the order th
 function noOdds( values )
 */
 
-function noOdds( values ){
-  // Return all non-odd values
+const noOdds = (values) => {
+  const evenArray = [];
+  values.forEach(function (element) {
+    if(element % 2 === 0) {
+      evenArray.push(element);
+    }
+  })
+  return evenArray;
 }
